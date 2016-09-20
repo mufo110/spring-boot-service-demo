@@ -1,0 +1,23 @@
+server:
+  context-path: 
+  port: 1111   # HTTP (Tomcat) port
+
+spring:
+  application:
+     name: spring-boot-service
+     
+eureka:
+  instance:
+    hostname: ${host} #可以在maven编译时设置参数
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://192.168.132.128:8761/eureka/
+
+     
+     
+     
+   
+
+
